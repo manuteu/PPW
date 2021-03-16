@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <fieldset>
+      <form>
+        <p>
+          <input
+            type="text"
+            name="Nome"
+            id="input1"
+            placeholder="Informe o seu nome"
+            maxlength="50"
+          />
+        </p>
+        <p>
+          <input
+            type="email"
+            name="E-mail"
+            id="input2"
+            placeholder="Informe o seu email"
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            name="Telefone"
+            id="input3"
+            placeholder="Telefone"
+            maxlength="13"
+          />
+        </p>
+        <p>
+          <ul>
+            <li><input type="checkbox" /> Administrador</li>
+            <li><input type="checkbox" /> Advogado</li>
+            <li><input type="checkbox" /> Matemático</li>
+            <li><input type="checkbox" /> Professor</li>
+            <li><input type="checkbox" /> Analista de Sistemas</li>
+            <li><input type="checkbox" /> Médico</li>
+          </ul>
+        </p>
+        <p>
+          <input type="radio" name="opcao" checked />
+          Macho
+          <input type="radio" name="opcao"  />
+          Fêmea
+        </p>
+        <div class="butao">
+          <button class="button"><span>Enviar </span></button>
+        </div>
+
+      </form>
+    </fieldset>
+  </body>
+</html>
