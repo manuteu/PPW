@@ -1,5 +1,46 @@
 h1 {
   text-align: center;
+  color: #1065aa;
+}
+fieldset {
+  border: solid 2px #2195f336;
+  border-radius: 4px;
+}
+
+input {
+  width: 100%;
+}
+input :placeholder-shown {
+  font-size: 18px;
+}
+
+input[type='text']:focus {
+  border: 3px solid #2195f3;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #2195f373;
+}
+input[type='email']:focus {
+  border: 3px solid #2195f3;
+}
+
+input[type='email'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #2195f373;
+}
+
+.titulo {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #2196f3;
 }
 
 .butao {
@@ -8,9 +49,9 @@ h1 {
 
 .button {
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #2196f3;
   border: none;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 16px;
   padding: 15px;
@@ -43,4 +84,130 @@ h1 {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Customize the label (the container) */
+.container-2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-2:hover input ~ .checkmark-2 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-2 input:checked ~ .checkmark-2 {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-2:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-2 input:checked ~ .checkmark-2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-2 .checkmark-2:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
