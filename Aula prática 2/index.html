@@ -10,6 +10,8 @@
     <h1>Formulário</h1>
     <fieldset>
       <form>
+        <p class="titulo">Informações Pessoais</p>
+
         <p>
           <input
             type="text"
@@ -36,26 +38,62 @@
             maxlength="13"
           />
         </p>
-        <p>
-          <ul>
-            <li><input type="checkbox" /> Administrador</li>
-            <li><input type="checkbox" /> Advogado</li>
-            <li><input type="checkbox" /> Matemático</li>
-            <li><input type="checkbox" /> Professor</li>
-            <li><input type="checkbox" /> Analista de Sistemas</li>
-            <li><input type="checkbox" /> Médico</li>
-          </ul>
-        </p>
-        <p>
-          <input type="radio" name="opcao" checked />
-          Macho
-          <input type="radio" name="opcao"  />
-          Fêmea
-        </p>
+        <fieldset>
+          <p class="titulo">Profissão</p>
+
+          <p>
+            <label class="container"
+              >Administrador
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Advogado
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Matemático
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Professor
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Analista de Sistemas
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Médico
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <p class="titulo">Sexo</p>
+
+          <p>
+            <label class="container-2"
+              >Macho
+              <input type="radio" name="opcao" />
+              <span class="checkmark-2"></span>
+            </label>
+            <label class="container-2"
+              >Fêmea
+              <input type="radio" name="opcao" />
+              <span class="checkmark-2"></span>
+            </label>
+          </p>
+        </fieldset>
         <div class="butao">
           <button class="button"><span>Enviar </span></button>
         </div>
-
       </form>
     </fieldset>
   </body>
