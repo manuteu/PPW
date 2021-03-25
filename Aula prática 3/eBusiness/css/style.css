@@ -45,6 +45,10 @@ p {
   font-size: 18px;
 }
 
+.butoes {
+  font-size: 26px;
+}
+
 .floatleft {
   float: left;
 }
@@ -303,7 +307,7 @@ div#preloader {
 
 .main-menu ul.navbar-nav li a {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: rgb(0, 0, 0);
+  color: rgb(235, 11, 255);
   font-size: 15px;
   font-weight: 500;
   padding: 24px 0px;
@@ -1126,7 +1130,7 @@ div#preloader {
   color: #444;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
   margin: 0 4px;
   padding: 6px 15px;
@@ -1614,10 +1618,10 @@ div#preloader {
 .single-blog .ready-btn {
   border: 1px solid #444;
   border-radius: 30px;
-  color: #444;
+  color: magenta;
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   margin-top: 10px;
   padding: 10px 20px;
@@ -1660,7 +1664,7 @@ div#preloader {
   border: 2px solid #fff;
   color: magenta;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   margin-left: 100px;
   padding: 10px 20px;
@@ -1719,8 +1723,8 @@ div#preloader {
 .contact-form button[type='submit'] {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 1px solid #ccc;
-  color: #444;
-  font-size: 16px;
+  color: rgb(214, 54, 54);
+  font-size: 20px;
   font-weight: 700;
   margin-top: 8px;
   padding: 12px 30px;
@@ -1838,9 +1842,9 @@ div#preloader {
 
 .footer-icons ul li a {
   border: 1px solid #444;
-  color: #444;
+  color: rgb(162, 21, 218);
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   height: 40px;
   line-height: 38px;
   margin-right: 5px;
@@ -2069,12 +2073,12 @@ div#preloader {
   border: 1px solid #fff;
   border-radius: 30px;
   color: #fff;
-  cursor: pointer;
+  cursor: grab;
   display: inline-block;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
   margin-top: 30px;
-  padding: 12px 40px;
+  padding: 20px 48px;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.4s ease 0s;
@@ -2083,7 +2087,7 @@ div#preloader {
 
 .ready-btn:hover {
   color: #fff;
-  background: #3ec1d5;
+  background: magenta;
   border: 1px solid #3ec1d5;
   text-decoration: none;
 }
